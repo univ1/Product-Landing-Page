@@ -1,0 +1,185 @@
+html, body {
+	font-family: "Roboto", sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #F5F5DC;
+}
+
+#header {
+	display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #F5F5DC;
+	z-index: 1;
+}
+
+#header-img {
+	padding-left: 5vw;
+	width: 4.75em;
+	height: 3.75em;
+}
+
+#company {
+	font-family: "PT Serif", serif;
+	margin: 0;
+	font-size: 2em;
+	position: relative;
+	top: 8px;
+	left: 15px;
+}
+
+#nav-bar {
+	display: flex;
+	position: fixed;
+	top: 1.25em;
+	left: 55vw;
+}
+
+.nav-link {
+	text-decoration: none;
+	margin-left: 8vw;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+#form-section {
+	margin-top: 5em;
+}
+
+#form h1 {
+	text-align: center;
+}
+
+#email {
+	display: block;
+	margin: auto;
+	margin-bottom: 1em;
+	width: 270px;
+	height: 20px;
+}
+
+#submit {
+	display: block;
+	margin: auto;
+	font-size: 1.1em;
+	background-color: #ACCBFF;
+	border: none;
+	width: 7em;
+	height: 1.5em;
+}
+
+#submit:hover {
+	background-color: #78AAFF;
+	transition: background-color 1s;
+}
+
+.heading {
+	text-align: center;
+	padding-top: 10vh;
+}
+
+.bottom-padding {
+	padding-bottom: 1em;
+}
+
+#features {
+	margin-top: 5vh;
+}
+
+#features-div {
+	display: grid;
+	grid-template-columns: 10vw 50vw;
+	align-items: center;
+}
+
+.icon {
+	font-size: 3em;
+	padding: 0.5em;
+}
+
+#chess {
+	color: #000000;
+}
+
+#puzzle {
+	color: #007FFF;
+}
+
+#dice {
+	color: #DC143C;
+}
+
+#trophy {
+	color: #FFD700;
+}
+
+.emphasized-text {
+	font-size: 1.1em;
+	font-weight: 600;
+}
+
+#demo {
+	position: relative;
+	padding-bottom: 8vh;
+	margin: auto;
+}
+
+#video {
+	border: none;
+	display: block;
+	margin: auto;
+}
+
+#reviews {
+	position: relative;
+	margin: auto;
+	width: 75%;
+}
+
+#reviews-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.review-wrapper {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	border: solid;
+	padding: 1em;
+	margin: 0 2em 4em 2em;
+	background-color: #FFFFFF;
+}
+
+.review-top {
+	padding-bottom: 4em;
+}
+
+.review-name {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+
+footer {
+	text-align: center;
+}
+
+footer ul {
+	display: flex;
+	padding-left: 0;
+	justify-content: center;
+}
+
+footer ul li {
+	list-style: none;
+	margin: 0 1.25em;
+}

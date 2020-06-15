@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Product Landing Page</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap">
+		<!-- The following styles were added to this html file in order to pass some freeCodeCamp tests which wouldn't otherwise pass -->
+		<style>
+			@media (max-width: 1000px) {
+				.heading {
+					padding-top: 16vh;
+				}
+				
+				.icon {
+					position: relative;
+					left: -1.75em;
+				}
+				
+				#nav-bar {
+					flex-direction: column;
+					padding-left: 6.5em;
+				}
+				
+				header {
+					padding-bottom: 2.75em;
+				}
+				
+				#form-section {
+					margin-top: 7em;
+				}
+				
+				#features {
+					margin-top: -2em;
+				}
+				
+				#demo {
+					margin-top: -4em;
+				}
+				
+				#reviews {
+					margin-top: 2em;
+				}
+				
+				#reviews-container {
+					grid-template-columns: 1fr;
+				}
+				
+				.review {
+					padding-bottom: 1em;
+				}
+			}
+			
+			@media (max-width: 625px) {
+				#video {
+					width: 400px;
+					height: 225px;
+				}
+				
+				#reviews {
+					margin-top: -6em;
+				}
+			}
+			
+			#features-div-wrapper {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			
+			
+			}
+		</style>
+	</head>
+	
+	<body>
+		<header id="header">
+			
+			<img id="header-img" src="https://previews.dropbox.com/p/thumb/AAxzlE9Kosw10rHgDfB84-Aw0Kz0hyYo98xGBzUgOIk0PWV3FK2Fv2PeuLFfOmXL6dAWz8bgcgsvela6YN9lQ8UZTNGBjEbPU245ZQWuRPgYCzJcnSIY9C0QjbmdBZG8WuD3HAFkvgvm4_IXSAPB4_GeIToZy5zvun-9Ato4ici8UQcGq1J1tV6NW6oMYjF0w4xH_l5FI7uAgzLdr_D2AZAEHO54TkO5D2hpMaUPXOxNwaZZtU2KUz1u4QxKWmdPqFodgXa-wf192FK_-W8ZDgGZRPdbtPiFuCE4bM7MvYth-VTmEag4qpzolSMc-NV9Hsd8Tbw2qb3aj7lODrT_vPBXg5XGZaWaUgdKaeZLnhF3a2KqqWmwRJFfEtNx83I9Agg/p.png?fv_content=true&size_mode=5"
+					 alt="Hi Toys">
+			<p id="company">Hi Toys</p>
+			
+			<nav id="nav-bar">
+		
+				<!-- Links must be direct children of nav in order to pass test (making them children of ul causes test to fail) -->
+				<a class="nav-link" href="#features">Features</a>
+				<a class="nav-link" href="#demo">Demo</a>
+				<a class="nav-link" href="#reviews">Reviews</a>
+				
+			</nav>
+		</header>
+		
+		<main>
+			
+			<section id="form-section">
+				<form id="form" action="https://www.freecodecamp.com/email-submit">
+					<label id="email-label" for="email"></label>
+					<h1>Phem-Bot: Collect, Build, Play</h2>
+					<input id="email" type="email" name="email" placeholder="Enter your email" required>
+					
+					<input id="submit" type="submit" value="Get Started">
+				</form>
+			</section>
+			
+			<div class="section-wrapper">
+			<section id="features" class="heading-section">
+				<h2 class="heading">Features</h2>
+				
+				<div id="features-div-wrapper">
+					<div id="features-div">
+						<span class="fas fa-chess-king icon" id="chess"></span>
+						<p class="icon-text">Our engineers work hard to ensure that every aspect of Phem-Bot is made using state of the art technology and industry-leading resources.</p>
+						<span class="fas fa-puzzle-piece icon" id="puzzle"></span>
+						<p class="icon-text">Collect every piece to give your Phem-Bot the most functionality. Show the world what you're made of!</p>
+						<span class="fas fa-dice icon" id="dice"></span>
+						<p class="icon-text">Phem-Bot's games are crowd-sourced and thus contribute to its endless replayability. There are over <span class="emphasized-text">two million</span> curated games you can play with your Phem-Bot, and more that are being made everyday!</p>
+						<span class="fas fa-trophy icon" id="trophy"></span>
+						<p class="icon-text">Voted <span class="emphasized-text">#1 Toy of the Year</span> by Awesome Toy World, Toy Lovers Unite, and Baby Got Toys.</p>
+					</div>
+				</div>
+			</section>
+			</div>
+			
+			<section id="demo" class="heading-section">
+				<h2 class="heading bottom-padding">Demo</h2>
+				<iframe id="video" 
+								title="video" 
+								width="600"
+								height="338" 
+								allow="fullscreen"
+								src="https://www.youtube.com/embed/r5HkTY40dWw">
+				</iframe>
+			</section>
+			
+			<section id="reviews" class="heading-section">
+				<h2 class="heading bottom-padding">Reviews</h2>
+				
+				<!-- DELETE NAME CONTAINERS -->
+				<div id="reviews-container">
+					<div class="review-wrapper">
+						<p class="review review-top">You wouldn't believe how much fun the Phem-Bot is! Growing up, I was never a big fan of toys or robots, but I got my hands on one of these
+						when my colleague brought it to work. Suffice it to say that I've been converted. Toys for life!</p>
+						
+						<div class="name-container">
+							<p class="review-name" id="walter">Walter Thurston<p>
+						</div>
+					</div>
+					
+					<div class="review-wrapper">
+						<p class="review review-top">For those adults among you who think you've outgrown toys, you haven't. Well maybe you have, but the Phem-Bot is hardly a toy. I honestly
+						didn't expect such futuristic technology to be so widely available on the market until 2050 or so. If you're on the fence, get one now!</p>
+						<div class="name-container">
+							<p class="review-name" id="amy">Amy Sherman<p>
+						</div>
+					</div>
+					
+					<div class="review-wrapper">
+						<p class="review-top">Hands down, the best toy ever! My best friend begged her parents to get her one as a high-school graduation present, and when they did,
+						our lives changed. I eventually got my own, but for weeks, we would spend our afternoons learning Chinese and improving at darts with her Phem-Bot.
+						Now that we have two between us, it's twice as fun!</p>
+						<div class="name-container">
+							<p class="review-name" id="nick">Nick Fischer</p>
+						</div>
+					</div>
+					
+					<div class="review-wrapper">
+						<p class="review">My grandmother is 97 years old and such a sweet soul. Our family bought her a Phem-Bot for Christmas and she adored it from the start.
+						Her favorite game was the balloon popping one, and watching her play was one of the most adorable things I've ever seen. We didn't even know that there were
+						add-ons you could buy to expand the Phem-Bot. Thanks to the Phem-Bot, we shared many precious moments with grandma that we'll never forget.</p>
+						<div class="name-container">
+							<p class="review-name" id="melinda">Melinda Kim<p>
+						</div>
+					</div>
+					
+					<div class="review-wrapper">
+						<p class="review">Ten out of ten! I've never had so much fun in my entire life. The brick breaking game is so addicting that it's invading my dreams.
+						The music is just sooo good! I highly recommend the Phem-Bot and the scaffolding add-on to anybody who enjoys having fun.</p>
+						<div class="name-container">
+							<p class="review-name" id="jeremiah">Jeremiah Glover<p>
+						</div>
+					</div>
+					
+					<div class="review-wrapper">
+						<p class="review">What a neat toy! I've been obsessed with toys since I was a little baby, and I really thought that nothing would surpass last year's
+						Wonderman toy for at least a few years. Boy, was I wrong... The Phem-Bot is a must-have toy for any toy enthusiast, and it's even a great first toy
+						to get non-toy-lovers on board. It has so much functionality that it's practically all you'll ever need.</p>
+						<div class="name-container">
+							<p class="review-name" id="arjun">Arjun Singh</p>
+						<div class="name-container">
+					</div>
+				</div>
+			</section>
+
+		</main>
+		
+		<footer>
+			<ul>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Terms</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			
+			<p>&copy; 2020, Hi Toys, Alberto Torrigiotti</p>
+		</footer>
+		
+		<script src="main.js"></script>
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	</body>
+</html>
